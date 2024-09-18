@@ -1,0 +1,78 @@
+
+body {
+    margin: 0;
+}
+
+#screenshotCanvas {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.toolbar-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(229, 238, 244, 0.9);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: move;
+    z-index: 1000;
+    user-select: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #084e98;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: auto;
+}
+
+button:hover {
+    background-color: #165da8;
+}
+
+.arrow-icon {
+    transform: rotate(-45deg);
+}
+
+#deleteAll {
+    background-color: #cc280b;
+}
+
+#deleteAll:hover {
+    background-color: #de2e0e;
+}
+
+#saveImage {
+    background-color: #259b04;
+}
+
+#saveImage:hover {
+    background-color: #2eb907;
+}
+
+.active {
+    background-color: #1b6cc3;
+}
+
+img {
+    pointer-events: none;
+}
